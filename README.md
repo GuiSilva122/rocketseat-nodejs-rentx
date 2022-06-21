@@ -1,4 +1,4 @@
-# rocketseat-nodejs-rentalx
+# rocketseat-nodejs-rentx
 
 To run the application: yarn dev
 
