@@ -1,7 +1,3 @@
-// import { createConnection } from "typeorm";
-
-// createConnection();
-
 import { createConnection, getConnectionOptions } from 'typeorm';
 
 interface IOptions {
@@ -10,7 +6,7 @@ interface IOptions {
 
 getConnectionOptions().then(options => {
   const newOptions = options as IOptions;
-  newOptions.host = 'database'; //Essa opção deverá ser EXATAMENTE o nome dado ao service do banco de dados
+  newOptions.host = 'database';
   createConnection({
     ...options,
   });
