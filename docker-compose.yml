@@ -15,7 +15,6 @@ services:
       - pgdata:/data/postgres
   app:
     build: .
-    command: npm run dev
     container_name: rentx
     ports:
       - 3333:3333
